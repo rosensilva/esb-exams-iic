@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/rocco-backend" name="PlaceOrderBackend" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/placeorder">
+        <inSequence>
+            <log level="custom">
+                <property name="PlaceOrder" value="######### IN #########"/>
+            </log>
+            <log level="full"/>
+            <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+            <payloadFactory media-type="json">
+                <format>
+                    {
+                    	"orderId": $1,
+                    	"status": "order is placed"
+                    }
+                </format>
+                <args>
+                    <arg evaluator="json" expression="$.orderId"/>
+                </args>
+            </payloadFactory>
+            <log level="custom">
+                <property name="PlaceOrder" value="######### OUT #########"/>
+            </log>
+            <log level="full"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
