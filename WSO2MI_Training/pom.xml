@@ -3,11 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
-  <artifactId>WSO2MI_Training_</artifactId>
+  <artifactId>WSO2MI_Training</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>WSO2MI_Training_</name>
-  <description>WSO2MI_Training_</description>
+  <name>WSO2MI_Training</name>
+  <description>WSO2MI_Training</description>
   <modules>
     <module>WSO2MI_Training_Configs</module>
     <module>WSO2MI_Training_CompositeExporter</module>

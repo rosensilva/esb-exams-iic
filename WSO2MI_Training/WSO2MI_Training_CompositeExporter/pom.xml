@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.example</groupId>
-    <artifactId>WSO2MI_Training_</artifactId>
+    <artifactId>WSO2MI_Training</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <groupId>com.example</groupId>
